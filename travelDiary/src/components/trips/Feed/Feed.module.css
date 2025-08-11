@@ -1,0 +1,42 @@
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #ff4d4f;
+  background: rgba(255, 77, 79, 0.1);
+  border-radius: 4px;
+  margin: 1rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .feed {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feed {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}

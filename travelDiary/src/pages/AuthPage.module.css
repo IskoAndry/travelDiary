@@ -1,0 +1,61 @@
+.authPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.authContainer {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  color: #1890ff;
+  background: rgba(24, 144, 255, 0.1);
+}
+
+.tabButton.active {
+  color: #1890ff;
+  border-bottom: 2px solid #1890ff;
+}
+
+.tabContent {
+  padding: 2rem;
+}
+
+@media (max-width: 576px) {
+  .authPage {
+    padding: 1rem;
+  }
+  
+  .authContainer {
+    box-shadow: none;
+  }
+  
+  .tabContent {
+    padding: 1.5rem;
+  }
+}
